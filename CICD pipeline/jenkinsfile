@@ -12,7 +12,7 @@ pipeline{
         stage('build code')
         {
             steps{
-                git 'https://github.com/Sonal0409/DevOpsClassCodes.git'
+                git 'https://github.com/devops-learner01012022/DevOpsClassCodes.git'
                 sh 'mvn package'
             }
              post {
@@ -25,7 +25,7 @@ pipeline{
         {
             steps
             {
-                git 'https://github.com/Sonal0409/DevOpsClassCodes.git'
+                git 'https://github.com/devops-learner01012022/DevOpsClassCodes.git'
             }
             post
             {
