@@ -37,7 +37,8 @@ metadata:
   name: kubernetes-dashboard
   namespace: default
 spec:
-  type: NodePort
+  #type: NodePort
+  type: LoadBalancer
   ports:
     - port: 80
       targetPort: 9090
