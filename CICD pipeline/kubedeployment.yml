@@ -3,7 +3,7 @@ apiVersion: apps/v1
 metadata:
   name: kubeserve
 spec:
-  replicas: 2
+  replicas: 1
   minReadySeconds: 10 # wait for 45 sec before going to deploy next pod
   strategy:
     type: RollingUpdate
@@ -28,7 +28,7 @@ apiVersion: v1
 metadata:
    name: kubeserve-svc
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
     - port: 8080
       targetPort: 8080
