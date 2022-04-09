@@ -30,7 +30,7 @@ kind: Service
 metadata:
   name: nginx-svc
 spec:
-  type: ClusterIP  ## this is default if we do not type in service definition
+  type: LoadBalancer  ## this is default if we do not type in service definition
   selector:
     app: nginx
   ports:
